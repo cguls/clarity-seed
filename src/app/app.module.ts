@@ -7,13 +7,19 @@ import { ClarityModule } from '@clr/angular';
 import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
-import { AboutComponent } from "./about/about.component";
+import { BlogComponent } from './blog/blog.component';
+import { HobbyComponent } from './hobby/hobby.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AboutComponent,
-        HomeComponent
+        HomeComponent,
+        BlogComponent,
+        HobbyComponent,
+        ContactComponent,
+        ProjectComponent
     ],
     imports: [
         BrowserAnimationsModule,
