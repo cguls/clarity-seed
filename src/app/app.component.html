@@ -17,6 +17,29 @@
     <div class="header-actions">
     </div>
   </clr-header>
+  <nav *ngIf= "router.url == '/projects'" class="subnav">
+      <ul class="nav">
+          <li class="nav-item">
+              <a class="nav-link active" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/projects">Research</a>
+          </li>
+      </ul>
+  </nav>
+  <nav *ngIf= "router.url == '/hobbies'" class="subnav">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="/hobbies">Mountain Biking</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/hobbies">Backpacking</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/hobbies">Travel</a>
+        </li>
+    </ul>
+</nav>
   <div class="content-container">
     
     <div class="content-area">
@@ -28,18 +51,12 @@
           <a href="..." class="nav-link active">
             Nav Element 1
           </a>
-          <a href="..." class="nav-link">
-            Nav Element 2
-          </a>
           <section class="nav-group collapsible">
             <input id="tabexample1" type="checkbox">
             <label for="tabexample1">Collapsible Nav Element</label>
             <ul class="nav-list">
               <li>
                 <a class="nav-link">Link 1</a>
-              </li>
-              <li>
-                <a class="nav-link">Link 2</a>
               </li>
             </ul>
           </section>
@@ -55,15 +72,6 @@
               </li>
               <li>
                 <a class="nav-link active">Link 3</a>
-              </li>
-              <li>
-                <a class="nav-link">Link 4</a>
-              </li>
-              <li>
-                <a class="nav-link">Link 5</a>
-              </li>
-              <li>
-                <a class="nav-link">Link 6</a>
               </li>
             </ul>
           </section>
